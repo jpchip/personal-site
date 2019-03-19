@@ -1,0 +1,24 @@
+[
+	{
+		"title": "Best Bloody Mary",
+		"date": "2010-08",
+		"description":
+		"Website and PWA for reviewing Bloody Marys.",
+		"url": "https://bestbloodymary.com",
+		"thumbnailImage": "../images/projects/bloody.gif"
+	},
+	{
+		"title": "giveaway-grabber",
+		"date": "2018-12",
+		"description":
+		"Script to automate entries to Amazon giveaways",
+		"url": "https://github.com/jpchip/giveaway-grabber"
+	},
+	{
+		"title": "Web Component Loader",
+		"date": "2018-12",
+		"description":
+		"Preview web components",
+		"url": "https://jpchip.github.io/web-component-loader/"
+	}
+]

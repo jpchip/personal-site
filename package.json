@@ -4,7 +4,9 @@
   "description": "Portfolio site built from Gatsby Starter kit",
   "version": "0.1.0",
   "author": "Jared Chapiewsky <jpchapiewsky@gmail.com>",
-  "contributors": ["Kyle Mathews <mathews.kyle@gmail.com>"],
+  "contributors": [
+    "Kyle Mathews <mathews.kyle@gmail.com>"
+  ],
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gatsby": "^2.1.18",
@@ -16,6 +18,7 @@
     "gatsby-plugin-sharp": "^2.0.22",
     "gatsby-remark-images": "^3.0.5",
     "gatsby-source-filesystem": "^2.0.23",
+    "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-remark": "^2.2.6",
     "gatsby-transformer-sharp": "^2.1.14",
     "node-sass": "^4.11.0",

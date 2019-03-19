@@ -5,6 +5,13 @@ module.exports = {
     author: `@jpchip`,
   },
   plugins: [
+	  `gatsby-transformer-json`,
+	  {
+		  resolve: `gatsby-source-filesystem`,
+		  options: {
+			  path: `${__dirname}/src/data`,
+		  },
+	  },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
