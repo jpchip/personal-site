@@ -5,15 +5,15 @@
 		"description":
 		"Website and PWA for reviewing Bloody Marys.",
 		"url": "https://bestbloodymary.com",
-		"thumbnailImage": "../images/projects/bloody.gif"
+		"thumbnailImage": "../images/projects/best-bloody-mary.png"
 	},
 	{
-		"title": "giveaway-grabber",
+		"title": "Giveaway Grabber",
 		"date": "2018-12",
 		"description":
 		"Script to automate entries to Amazon giveaways",
 		"url": "https://github.com/jpchip/giveaway-grabber",
-		"thumbnailImage": "../images/projects/web-component-loader.png"
+		"thumbnailImage": "../images/projects/giveaway-grabber.png"
 	},
 	{
 		"title": "Web Component Loader",
@@ -22,5 +22,29 @@
 		"Preview web components",
 		"url": "https://jpchip.github.io/web-component-loader/",
 		"thumbnailImage": "../images/projects/web-component-loader.png"
+	},
+	{
+		"title": "Personal Site",
+		"date": "2019-03",
+		"description":
+		"This site (how meta).",
+		"url": "https://github.com/jpchip/personal-site",
+		"thumbnailImage": "../images/projects/personal-site.png"
+	},
+	{
+		"title": "Youtube album uploader",
+		"date": "2016-02",
+		"description":
+		"node library to upload mp3 album to youtube",
+		"url": "https://github.com/jpchip/youtube-album-uploader",
+		"thumbnailImage": "../images/projects/youtube-album-uploader.png"
+	},
+	{
+		"title": "jQuery Sticky Table Headers",
+		"date": "2017-06",
+		"description":
+		"jquery plugin to add a sticky table header and column",
+		"url": "https://github.com/jpchip/stickytable",
+		"thumbnailImage": "../images/projects/sticky-table.png"
 	}
 ]

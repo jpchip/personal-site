@@ -13,15 +13,16 @@ const BlogPage = ({ data }) => {
 				title="Blog"
 				keywords={[`gatsby`, `application`, `react`, `portfolio`]}
 			/>
+			<h1>Posts</h1>
 			<ul className="list-unstyled">
 				{posts.map(post => (
-					<li key={post.node.id} className="media">
+					<li key={post.node.id} className="media mt-2">
 						{post.node.frontmatter.thumbnail && <Link to={post.node.fields.slug}>
 							<Img
 								fixed={post.node.frontmatter.thumbnail.childImageSharp.fixed}
 							/>
 						</Link>}
-						<div className="media-body">
+						<div className="media-body ml-1">
 							<h5 className="mt-0 mb-1">{post.node.frontmatter.title}</h5>
 							<p>{post.node.excerpt} <Link to={post.node.fields.slug}>Read More</Link></p>
 							{post.node.frontmatter.tags ? (

@@ -1,9 +1,12 @@
 ---
-title: Thumbnail Example
+title: Flickr
 date: 2019-02-25
-thumbnail: "../../images/gatsby-astronaut.png"
+thumbnail: "../../images/ferns.jpg"
+tags: ['flickr', 'personal', 'rant']
 ---
 
-This is an example of a thumbnail.
+I love Flickr, and have shared lots of photos on it. I am disappointed 
+that they decided to go back to a premium model though, and haven't decided to pay or not. 
+I feel like they kinda took my photos hostage.
 
-![astronaut](../../images/gatsby-astronaut.png)
+

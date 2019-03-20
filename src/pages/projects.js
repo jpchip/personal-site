@@ -37,7 +37,7 @@ export default ProjectsPage;
 
 export const projectsQuery = graphql`
     query {
-        allProjectsJson(sort: { order: DESC, fields: [date] }) {
+        allProjectsJson(sort: { order: ASC, fields: [title] }) {
             edges {
                 node {
                     id
