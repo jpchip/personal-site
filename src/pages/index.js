@@ -1,20 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Social from "../components/social"
 import SEO from "../components/seo"
+import 'font-awesome/css/font-awesome.min.css';
+import Helmet from 'react-helmet'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/blog/">Go to blog</Link>
+	  <Helmet>
+		  <body className="ferns" />
+	  </Helmet>
+    <SEO title="Home" keywords={[`web`, `developer`, `programmer`]} />
+	  <div className="jumbotron mt-5 pt-3">
+		  <h1 className="display-4">Hello!</h1>
+		  <p className="lead">I am a web developer at <a href="https://earthlinginteractive.com/">Earthling Interactive</a>.
+		  I have 15 years of experience with both front end and back end development. </p>
+		  <Social/>
+	  </div>
   </Layout>
 )
 

@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import 'bootstrap/dist/js/bootstrap.js';
 
 import Header from "./header"
 import '../styles/styles.scss';
@@ -20,9 +21,9 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
-          <main className="container">{children}</main>
-          <footer className="container text-muted py-1">
-            © {new Date().getFullYear()} Jared Chapiewsky, Built with
+          <main className="container mb-5 mt-3">{children}</main>
+          <footer className="container-fluid text-muted py-1 text-center bg-light fixed-bottom">
+            © {new Date().getFullYear()} {data.site.siteMetadata.author}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>

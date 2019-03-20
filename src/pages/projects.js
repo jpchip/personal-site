@@ -7,21 +7,21 @@ import Img from 'gatsby-image';
 const ProjectsPage = ({ data }) => (
 	<Layout>
 		<SEO
-			title="Home"
+			title="Projects"
 			keywords={[`gatsby`, `application`, `react`, `portfolio`]}
 		/>
 		<h1>Projects</h1>
-		<div className="project-list">
+		<div className="card-columns">
 			{data.allProjectsJson.edges.map(project => (
-				<div key={project.node.id} className="project-list__item">
-					<div className="project-list__thumbnail">
-						<Img fluid={project.node.thumbnailImage.childImageSharp.fluid} />
-					</div>
-					<div className="project-list__content">
-						<h2>{project.node.title}</h2>
-						<div className="project-list__excerpt">
+				<div key={project.node.id} className="card mb-2">
+					<div className="card-header">{project.node.title}</div>
+						{project.node.thumbnailImage.childImageSharp &&
+						<Img className="card-img-top" fluid={project.node.thumbnailImage.childImageSharp.fluid} />
+						}
+					<div className="card-body">
+						<p className="card-text">
 							{project.node.description}
-						</div>
+						</p>
 						<a href={project.node.url} className="btn btn-primary">
 							Visit the Website
 						</a>

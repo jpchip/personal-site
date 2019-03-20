@@ -12,13 +12,15 @@
 		"date": "2018-12",
 		"description":
 		"Script to automate entries to Amazon giveaways",
-		"url": "https://github.com/jpchip/giveaway-grabber"
+		"url": "https://github.com/jpchip/giveaway-grabber",
+		"thumbnailImage": "../images/projects/web-component-loader.png"
 	},
 	{
 		"title": "Web Component Loader",
 		"date": "2018-12",
 		"description":
 		"Preview web components",
-		"url": "https://jpchip.github.io/web-component-loader/"
+		"url": "https://jpchip.github.io/web-component-loader/",
+		"thumbnailImage": "../images/projects/web-component-loader.png"
 	}
 ]

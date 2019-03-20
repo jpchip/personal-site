@@ -1,0 +1,37 @@
+[
+	{
+		"icon": "fa fa-twitter",
+		"link": "https://twitter.com/jpchip",
+		"title": "Twitter"
+	},
+	{
+		"icon": "fa fa-github",
+		"link": "http://github.com/jpchip",
+		"title": "Github"
+	},
+	{
+		"icon": "fa fa-bandcamp",
+		"link": "https://bandcamp.com/jchip",
+		"title": "Bandcamp"
+	},
+	{
+		"icon": "fa fa-flickr",
+		"link": "https://www.flickr.com/people/24311566@N07/",
+		"title": "Flickr"
+	},
+	{
+		"icon": "fa fa-yelp",
+		"link": "https://jpchip.yelp.com/",
+		"title": "Yelp"
+	},
+	{
+		"icon": "fa fa-wordpress",
+		"link": "https://mylifeintheservice.wordpress.com/",
+		"title": "WordPress"
+	},
+	{
+		"icon": "fa fa-lastfm",
+		"link": "https://www.last.fm/user/jchip",
+		"title": "last.fm"
+	}
+]
