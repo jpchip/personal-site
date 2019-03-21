@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Img from 'gatsby-image';
@@ -19,7 +19,7 @@ const ProjectsPage = ({ data }) => (
 			{data.allProjectsJson.edges.map(project => (
 				<div key={project.node.id} className="card mb-2">
 					<div className="card-header">{project.node.title}</div>
-					<a href={project.node.url} target="_blank">
+					<a href={project.node.url} target="_blank" rel="noopener noreferrer" >
 						{project.node.thumbnailImage.childImageSharp &&
 						<Img className="card-img-top border-bottom" fluid={project.node.thumbnailImage.childImageSharp.fluid} />
 						}

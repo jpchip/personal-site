@@ -3,11 +3,15 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Helmet from 'react-helmet'
 
 const SecondPage = () => (
   <Layout>
+	  <Helmet>
+		  <body className="floor" />
+	  </Helmet>
     <SEO title="Experience" />
-    <h1>Experience</h1>
+    <h1 className="text-white">Experience</h1>
     <div className="card-deck mt-3">
 		<div className="card ">
 			<div className="card-header">
