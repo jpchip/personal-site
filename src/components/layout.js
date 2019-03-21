@@ -13,6 +13,7 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            author
           }
         }
       }
@@ -26,7 +27,7 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           <main className="container mb-5 mt-3">{children}</main>
-          <footer className="container-fluid text-muted py-1 text-center bg-light fixed-bottom">
+          <footer className="container-fluid text-muted py-2 text-center bg-light fixed-bottom">
             © {new Date().getFullYear()} {data.site.siteMetadata.author}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>

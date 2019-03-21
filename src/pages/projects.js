@@ -1,30 +1,33 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Img from 'gatsby-image';
+import Helmet from 'react-helmet'
 
 const ProjectsPage = ({ data }) => (
 	<Layout>
+		<Helmet>
+			<body className="keyboard" />
+		</Helmet>
 		<SEO
 			title="Projects"
 			keywords={[`gatsby`, `application`, `react`, `portfolio`]}
 		/>
-		<h1>Projects</h1>
+		<h1 className="text-white">Projects</h1>
 		<div className="card-columns">
 			{data.allProjectsJson.edges.map(project => (
 				<div key={project.node.id} className="card mb-2">
 					<div className="card-header">{project.node.title}</div>
+					<a href={project.node.url} target="_blank">
 						{project.node.thumbnailImage.childImageSharp &&
-						<Img className="card-img-top" fluid={project.node.thumbnailImage.childImageSharp.fluid} />
+						<Img className="card-img-top border-bottom" fluid={project.node.thumbnailImage.childImageSharp.fluid} />
 						}
+					</a>
 					<div className="card-body">
 						<p className="card-text">
 							{project.node.description}
 						</p>
-						<a href={project.node.url} className="btn btn-primary">
-							Visit the Website
-						</a>
 					</div>
 				</div>
 			))}

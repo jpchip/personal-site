@@ -32,10 +32,10 @@
 		"thumbnailImage": "../images/projects/personal-site.png"
 	},
 	{
-		"title": "Youtube album uploader",
+		"title": "Youtube Album Uploader",
 		"date": "2016-02",
 		"description":
-		"node library to upload mp3 album to youtube",
+		"Script to upload mp3 album to youtube",
 		"url": "https://github.com/jpchip/youtube-album-uploader",
 		"thumbnailImage": "../images/projects/youtube-album-uploader.png"
 	},
@@ -43,7 +43,7 @@
 		"title": "jQuery Sticky Table Headers",
 		"date": "2017-06",
 		"description":
-		"jquery plugin to add a sticky table header and column",
+		"JQuery plugin to add a sticky table header and column",
 		"url": "https://github.com/jpchip/stickytable",
 		"thumbnailImage": "../images/projects/sticky-table.png"
 	}

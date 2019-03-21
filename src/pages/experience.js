@@ -9,40 +9,40 @@ const SecondPage = () => (
     <SEO title="Experience" />
     <h1>Experience</h1>
     <div className="card-deck mt-3">
-		<div class="card ">
-			<div class="card-header">
+		<div className="card ">
+			<div className="card-header">
 				Front-End
 			</div>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">StencilJS</li>
-				<li class="list-group-item">Angular</li>
-				<li class="list-group-item">React</li>
-				<li class="list-group-item">Backbone</li>
-				<li class="list-group-item">Durandal</li>
+			<ul className="list-group list-group-flush">
+				<li className="list-group-item">StencilJS</li>
+				<li className="list-group-item">Angular</li>
+				<li className="list-group-item">React</li>
+				<li className="list-group-item">Backbone.js</li>
+				<li className="list-group-item">Durandal</li>
 			</ul>
 		</div>
-		<div class="card">
-			<div class="card-header">
-				Back End
+		<div className="card">
+			<div className="card-header">
+				Back-End
 			</div>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">Laravel (PHP)</li>
-				<li class="list-group-item">Express (Node)</li>
-				<li class="list-group-item">Docker/Rancher</li>
-				<li class="list-group-item">MySQL</li>
-				<li class="list-group-item">PostgresQL</li>
+			<ul className="list-group list-group-flush">
+				<li className="list-group-item">Laravel (PHP)</li>
+				<li className="list-group-item">Express (Node)</li>
+				<li className="list-group-item">Docker/Rancher</li>
+				<li className="list-group-item">MySQL</li>
+				<li className="list-group-item">PostgreSQL</li>
 			</ul>
 		</div>
-		<div class="card">
-			<div class="card-header">
+		<div className="card">
+			<div className="card-header">
 				Other
 			</div>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">Cartography</li>
-				<li class="list-group-item">Communication</li>
-				<li class="list-group-item">Project Management</li>
-				<li class="list-group-item">Statistics</li>
-				<li class="list-group-item">Problem Solving</li>
+			<ul className="list-group list-group-flush">
+				<li className="list-group-item">Cartography</li>
+				<li className="list-group-item">Team Leadership</li>
+				<li className="list-group-item">Project Management</li>
+				<li className="list-group-item">Communication</li>
+				<li className="list-group-item">Problem Solving</li>
 			</ul>
 		</div>
     </div>

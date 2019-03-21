@@ -33,5 +33,10 @@
 		"icon": "fa fa-lastfm",
 		"link": "https://www.last.fm/user/jchip",
 		"title": "last.fm"
+	},
+	{
+		"icon": "fa fa-key",
+		"link": "https://keybase.io/jpchapiewsky",
+		"title": "keybase.io"
 	}
 ]
