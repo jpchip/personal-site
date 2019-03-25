@@ -38,5 +38,10 @@
 		"icon": "fa fa-key",
 		"link": "https://keybase.io/jpchapiewsky",
 		"title": "keybase.io"
+	},
+	{
+		"icon" : "fa fa-bitcoin",
+		"link" : "https://www.blockchain.com/btc/address/14ziWa5NFdFYhvncQqgpyWnvELXYyNfmGy",
+		"title" : "Bitcoin Wallet"
 	}
 ]

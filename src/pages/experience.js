@@ -10,7 +10,7 @@ const SecondPage = () => (
 	  <Helmet>
 		  <body className="floor" />
 	  </Helmet>
-    <SEO title="Experience" />
+    <SEO title="Experience" keywords={[`resume`, `skills`, `education`]} />
     <h1 className="text-white">Experience</h1>
     <div className="card-deck mt-3">
 		<div className="card ">

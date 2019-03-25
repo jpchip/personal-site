@@ -12,7 +12,7 @@ const ProjectsPage = ({ data }) => (
 		</Helmet>
 		<SEO
 			title="Projects"
-			keywords={[`gatsby`, `application`, `react`, `portfolio`]}
+			keywords={[`projects`, `hacks`, `open source`, `portfolio`]}
 		/>
 		<h1 className="text-white">Projects</h1>
 		<div className="card-columns">

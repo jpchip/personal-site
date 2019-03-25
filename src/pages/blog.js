@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => {
 		<Layout>
 			<SEO
 				title="Blog"
-				keywords={[`gatsby`, `application`, `react`, `portfolio`]}
+				keywords={[`blog`, `articles`, `programming`, `random`]}
 			/>
 			<h1>Posts</h1>
 			<ul className="list-unstyled">

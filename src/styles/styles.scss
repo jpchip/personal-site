@@ -8,9 +8,16 @@
 	font-weight: bold;
 }
 
-.list-group-flush:last-child .list-group-item:last-child {
+.social-icons-list:last-child .list-group-item:last-child {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+	margin-bottom: 0;
 }
+@media (max-width: 576px) {
+	.social-icons-list {
+		flex-wrap: wrap;
+	}
+}
+
 
 .ferns {
 	background-image: url(../images/ferns.jpg);
@@ -23,3 +30,5 @@
 .floor {
 	background-image: url(../images/floor.jpg);
 }
+
+
