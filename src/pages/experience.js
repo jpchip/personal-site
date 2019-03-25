@@ -5,13 +5,26 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
 
-const SecondPage = () => (
+const Experience = () => (
   <Layout>
     <Helmet>
       <body className="floor" />
     </Helmet>
     <SEO title="Experience" keywords={[`resume`, `skills`, `education`]} />
     <h1 className="text-white">Experience</h1>
+    <div className="card">
+      <div className="card-header">Background</div>
+      <div className="card-body">
+        <p>
+          After graduating from the University of Wisconsin - Madison in 2005
+          with a BS in Cartrography and GIS, I joined Earthling Interactive as a
+          Web Developer. I have worked on projects big and small, in a wide
+          range of domains. From local pizza joints to home health care,
+          precision ag to trucking, I have had to jump into the deep end of
+          complex systems and build applications to fit the client's needs.
+        </p>
+      </div>
+    </div>
     <div className="card-deck mt-3">
       <div className="card ">
         <div className="card-header">Front-End</div>
@@ -48,4 +61,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Experience

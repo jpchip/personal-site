@@ -53,7 +53,7 @@ class Header extends React.Component {
               </li>
               <li className="nav-item">
                 <Link to="/blog" className="nav-link" activeClassName="active">
-                  Blog
+                  Thoughts
                 </Link>
               </li>
             </ul>

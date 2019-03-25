@@ -3,6 +3,7 @@ module.exports = {
     title: `Jared Chapiewsky`,
     description: `Portfolio of Jared Chapiewsky.`,
     author: `Jared Chapiewsky`,
+    baseUrl: `https://frosty-lovelace-b70f5c.netlify.com`
   },
   plugins: [
 	  `gatsby-transformer-json`,

@@ -4,19 +4,24 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
+import Helmet from "react-helmet"
 
 const BlogPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
   return (
     <Layout>
+      <Helmet>
+        <body className="jellies" />
+      </Helmet>
       <SEO
         title="Blog"
         keywords={[`blog`, `articles`, `programming`, `random`]}
       />
-      <h1>Posts</h1>
-      <ul className="list-unstyled">
-        {posts.map(post => (
-          <li key={post.node.id} className="media mt-2">
+
+      <h1 className="text-white">Posts</h1>
+      {posts.map(post => (
+        <div key={post.node.id} className="card mt-3">
+          <div className="media ml-1 mt-1">
             {post.node.frontmatter.thumbnail && (
               <Link to={post.node.fields.slug}>
                 <Img
@@ -24,7 +29,7 @@ const BlogPage = ({ data }) => {
                 />
               </Link>
             )}
-            <div className="media-body ml-1">
+            <div className="media-body ml-2 mt-1">
               <h5 className="mt-0 mb-1">{post.node.frontmatter.title}</h5>
               <p>
                 {post.node.excerpt}{" "}
@@ -53,9 +58,9 @@ const BlogPage = ({ data }) => {
                 </small>
               </p>
             </div>
-          </li>
-        ))}
-      </ul>
+          </div>
+        </div>
+      ))}
     </Layout>
   )
 }

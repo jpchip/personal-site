@@ -19,7 +19,7 @@ const IndexPage = () => (
         <a href="https://earthlinginteractive.com/">Earthling Interactive</a>. I
         have 15 years of experience with both front-end and back-end
         development. Check out my <Link to="/projects">side projects</Link>,
-        read my <Link to="/blog">blog</Link>, or follow me on social media:
+        read my <Link to="/blog">blog</Link>, or follow me on social media.
       </p>
       <Social />
     </div>
