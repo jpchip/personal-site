@@ -14,14 +14,14 @@ const BlogPage = ({ data }) => {
         <body className="jellies" />
       </Helmet>
       <SEO
-        title="Blog"
+        title="Thoughts"
         keywords={[`blog`, `articles`, `programming`, `random`]}
       />
 
-      <h1 className="text-white">Posts</h1>
+      <h1 className="text-white">Thoughts</h1>
       {posts.map(post => (
         <div key={post.node.id} className="card mt-3">
-          <div className="media ml-1 mt-1">
+          <div className="blog-media media ml-1 mt-1">
             {post.node.frontmatter.thumbnail && (
               <Link to={post.node.fields.slug}>
                 <Img

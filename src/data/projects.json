@@ -46,5 +46,13 @@
 		"JQuery plugin to add a sticky table header and column",
 		"url": "https://github.com/jpchip/stickytable",
 		"thumbnailImage": "../images/projects/sticky-table.png"
+	},
+	{
+		"title": "My Life in the Service",
+		"date": "2011-09",
+		"description":
+		"Transcription of Great Grandfather's diary",
+		"url": "https://mylifeintheservice.wordpress.com/",
+		"thumbnailImage": "../images/projects/title.jpg"
 	}
 ]
