@@ -2,7 +2,7 @@
   "name": "personal-site",
   "private": true,
   "description": "Portfolio site built from Gatsby Starter kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Jared Chapiewsky <jpchapiewsky@gmail.com>",
   "contributors": [
     "Kyle Mathews <mathews.kyle@gmail.com>"

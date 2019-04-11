@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/jpchapiewsky
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jaredchapiewsky.me
+  * I am jpchapiewsky (https://keybase.io/jpchapiewsky) on keybase.
+  * I have a public key with fingerprint 17AA BA1C 0E45 F191 7499  DF05 596F 62B3 0A8D B05B
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101b1324993092eb24c28348349f8a579085a575d3ccf0f86cdd6e395b4d0f8890e0a",
+      "fingerprint": "17aaba1c0e45f1917499df05596f62b30a8db05b",
+      "host": "keybase.io",
+      "key_id": "596f62b30a8db05b",
+      "kid": "0101b1324993092eb24c28348349f8a579085a575d3ccf0f86cdd6e395b4d0f8890e0a",
+      "uid": "998470502897c946add18ffacef8c119",
+      "username": "jpchapiewsky"
+    },
+    "service": {
+      "hostname": "jaredchapiewsky.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1555020980,
+  "expire_in": 157680000,
+  "prev": "54c9648d50e76758e27bfae3ea68850e88cf46c5ba122e0126465bcb1e658cfe",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMIpAnicrVJbaBNBFE20jRiJVaTFL5FFadWos5ud3dmgoFQLxceHoCitTWdmZ5M1
+NpvsJrExih9FUIoKvhBBxQcqioqtUl+UJK39UWkF/VEQ0Q8DCvXRahUVZ4vij58O
+A8O995wzZ+7c/sBEj997fWM0Ym2KD3ofFE9nPM3X7t3IC8TSc0I4L8TZ+MG26sxJ
+R+KmLoQFIAKRiCFJ1rQQ0CRGJJlKKCTzrRkIQ1UDCPID6iFKDWAgheq6wkIaJLLO
+Q6QBBrAQFAwzEWV20jYTaS4rqhgTLFLAZGiImqhyfd0AEGqKoUgkBDDSCYCEE2OW
+4zK4OYIdtsi0eI4HkXF7/8D/Z9+ZcTlNQ7IKIJCQplJNVrCui8gwMGUGoqKouUCH
+2Qncxjh6S5LGcNJk25x4TtgZFHgla1LmNtd9zR8Utpn+F7iIJ4NC0rbSFrW28nos
+nU46YZefziVdwjZGIr+lIsRM6LyjnJFltmNaCSEsciRNm662CCH3CjQEggJrT5o2
+i5guAqoKAny597Cs2z+ZaoqMdAiYqqgQMUklBmYhhhWEeBIhasgKhfyvJIkBUVJk
+BRJKRKZAXnIdOyyVsIQw5DZxlEs6ZjSB0xmbCTtLheYKj9fv8VVOcCfN45887c/8
+7T446bv//YvlN7/MWHax5lXvMF74WDn72jdxeGph76PBFcfr0JGe7J4Ps31Ll49U
+lbcP9sJz6/ucqpaaxs3PS6VZzuSHpFj8cbvt1PzyusBonfWmIea8rO1uTR0dGXqS
+bd3QdExv+XlHvTw6Vre3GBPbPr3dlT389Fu57BNubar3dWSa9q/oP/Nk1ZcSvfuy
+PXyn3ksm1CojKwsHOp+VLqSex9pfm3P7Sih/1dNdmNNRuWb04+qBJfUkkN3xtet+
+ZQ8YnqIM5FoaK35+7lu7esrMQ9uXemYGqhd3Ds07cbZ6X6xz2km742u5uWfZxy69
+Zl1Vfrp3S0VDYM+7K92Xzi/wjX1Omb8AnftFTw==
+=iGi5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jpchapiewsky
+
+==================================================================
