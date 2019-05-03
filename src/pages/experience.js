@@ -17,7 +17,7 @@ const Experience = () => (
       <div className="card-body">
         <p>
           After graduating from the University of Wisconsin - Madison in 2005
-          with a BS in Cartrography and GIS, I joined Earthling Interactive as a
+          with a BS in Cartography and GIS, I joined Earthling Interactive as a
           Web Developer. I have worked on projects big and small, in a wide
           range of domains. From local pizza joints to home health care,
           precision ag to trucking, I have had to jump into the deep end of
