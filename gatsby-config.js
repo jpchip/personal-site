@@ -57,6 +57,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: `mylifeintheservice.wordpress.com`,
+        protocol: `https`,
+        hostingWPCOM: true,
+        useACF: false
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

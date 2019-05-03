@@ -38,4 +38,15 @@
 	background-image: url(../images/jellies.jpg);
 }
 
+.stars {
+	background-image: url(../images/stars.jpg);
+}
 
+.illegible-posts {
+	h5 {
+		color: black;
+	}
+	.postContent {
+		max-width: 50em;
+	}
+}
