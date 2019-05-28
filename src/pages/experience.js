@@ -57,7 +57,6 @@ const Experience = () => (
         </ul>
       </div>
     </div>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
