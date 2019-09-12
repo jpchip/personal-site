@@ -5,6 +5,11 @@
 		"title": "Github"
 	},
 	{
+		"icon": "fa fa-twitter",
+		"link": "https://www.twitter.com/jpchip",
+		"title": "Twitter"
+	},
+	{
 		"icon": "fa fa-flickr",
 		"link": "https://www.flickr.com/people/24311566@N07/",
 		"title": "Flickr"

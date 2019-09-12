@@ -18,10 +18,14 @@ const Experience = () => (
         <p>
           After graduating from the University of Wisconsin - Madison in 2005
           with a BS in Cartography and GIS, I joined Earthling Interactive as a
-          Web Developer. I have worked on projects big and small, in a wide
+          Web Developer. At Earthling, I worked on projects big and small, in a wide
           range of domains. From local pizza joints to home health care,
-          precision ag to trucking, I have had to jump into the deep end of
+          precision ag to trucking, I had to jump into the deep end of
           complex systems and build applications to fit the client's needs.
+        </p>
+        <p>In 2019 I joined Silgan Containers as a Senior Web Developer. At Silgan I have 
+          helped implement best practices in coding and deployment processes, and maintained 
+          business critical software to support the day to day operations of the company.
         </p>
       </div>
     </div>
