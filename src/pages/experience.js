@@ -27,6 +27,7 @@ const Experience = () => (
           helped implement best practices in coding and deployment processes, and maintained 
           business critical software to support the day to day operations of the company.
         </p>
+        <p><a href="https://registry.jsonresume.org/jpchip">My Resume</a></p>
       </div>
     </div>
     <div className="card-deck mt-3">
