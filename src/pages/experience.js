@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
@@ -30,7 +28,7 @@ const Experience = () => (
         <p><a href="https://registry.jsonresume.org/jpchip">My Resume</a></p>
       </div>
     </div>
-    <div className="card-deck mt-3">
+    <div className="card-deck align-items-baseline mt-3">
       <div className="card ">
         <div className="card-header">Front-End</div>
         <ul className="list-group list-group-flush">
@@ -46,9 +44,11 @@ const Experience = () => (
         <ul className="list-group list-group-flush">
           <li className="list-group-item">Laravel (PHP)</li>
           <li className="list-group-item">Express (Node)</li>
+          <li className="list-group-item">ASP.NET</li>
           <li className="list-group-item">Docker/Rancher</li>
           <li className="list-group-item">MySQL</li>
           <li className="list-group-item">PostgreSQL</li>
+          <li className="list-group-item">SQL Server</li>
         </ul>
       </div>
       <div className="card">
