@@ -6,6 +6,12 @@
 
 This is a basic portfolio site for myself, built as an excuse to learn Gatsby.
 
+## Prerequisites
+
+- Node
+- Python
+- Visual Studio with C++ Desktop stuff (for sharper image plugin)
+
 ## Installing / Getting started
 
 Clone project, then
