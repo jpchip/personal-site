@@ -54,5 +54,13 @@
 		"Transcription of Great Grandfather's diary",
 		"url": "https://mylifeintheservice.wordpress.com/",
 		"thumbnailImage": "../images/projects/title.jpg"
+	},
+	{
+		"title": "Planning Poker",
+		"date": "2021-04",
+		"description":
+		"Simple Planning Poker site",
+		"url": "https://github.com/jpchip/planning-poker",
+		"thumbnailImage": "../images/projects/planningPoker.png"
 	}
 ]
