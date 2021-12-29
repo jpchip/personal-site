@@ -1,52 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro");
 
 @import "variables";
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
 .nav-link.active {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .social-icons-list:last-child .list-group-item:last-child {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-	margin-bottom: 0;
-}
-@media (max-width: 576px) {
-	.social-icons-list {
-		flex-wrap: wrap;
-	}
-	.blog-media {
-		flex-wrap: wrap;
-	}
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 0;
 }
 
+.social-icons-list.list-group-horizontal {
+  > .list-group-item:first-child {
+    border-top-width: 1px;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-icons-list {
+    flex-wrap: wrap;
+  }
+  .blog-media {
+    flex-wrap: wrap;
+  }
+}
 
 .ferns {
-	background-image: url(../images/ferns.jpg);
+  background-image: url(../images/ferns.jpg);
 }
 
 .keyboard {
-	background-image: url(../images/keyboard.jpg);
+  background-image: url(../images/keyboard.jpg);
 }
 
 .floor {
-	background-image: url(../images/floor.jpg);
+  background-image: url(../images/floor.jpg);
 }
 
 .jellies {
-	background-image: url(../images/jellies.jpg);
+  background-image: url(../images/jellies.jpg);
 }
 
 .stars {
-	background-image: url(../images/stars.jpg);
+  background-image: url(../images/stars.jpg);
 }
 
 .illegible-posts {
-	h5 {
-		color: black;
-	}
-	.postContent {
-		max-width: 50em;
-	}
+  h5 {
+    color: black;
+  }
+  .postContent {
+    max-width: 50em;
+  }
 }
