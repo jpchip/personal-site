@@ -62,5 +62,13 @@
 		"Simple Planning Poker site",
 		"url": "https://github.com/jpchip/planning-poker",
 		"thumbnailImage": "../images/projects/planningPoker.png"
+	},
+	{
+		"title": "MKE Frozen Treats",
+		"date": "2023-08",
+		"description":
+		"Frozen Custard Flavors of the Day",
+		"url": "https://github.com/jpchip/mke-frozen-treats",
+		"thumbnailImage": "../images/projects/mkefrozentreats.png"
 	}
 ]

@@ -23,7 +23,7 @@ it is limited in scope.
 
 The docs for strapi are super promising. This is not just a Headless CMS for blogs, but a tool to manage ALL your content. 
 I first tried using their docker image, but after a few hours of tinkering and not getting it to run I gave up and installed 
-the quickstart app on bare metal instead. I quickly released why it's still in alpha. There is a ton of potential here, but lots 
+the quickstart app on bare metal instead. I quickly realized why it's still in alpha. There is a ton of potential here, but lots 
 of little bugs and quirks. 
 
 As a test, I tried pointing it to a db of an existing project. I had to manually add each table in the UI, but it worked! I
@@ -41,4 +41,4 @@ Honestly the docs are a little too vague for me to understand. It's next on my l
    
 ### To be continued...
 
-I will try more sometime and report back in another post
+I will try more sometime and report back in another post.
