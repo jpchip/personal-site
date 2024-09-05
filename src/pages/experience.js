@@ -21,7 +21,7 @@ const Experience = () => (
           precision ag to trucking, I had to jump into the deep end of
           complex systems and build applications to fit the client's needs.
         </p>
-        <p>In 2019 I joined Silgan Containers as a Senior Web Developer. At Silgan I have 
+        <p>In 2019 I joined Silgan Containers as a Senior Web Developer. At Silgan I 
           helped implement best practices in coding and deployment processes, and maintained 
           business critical software to support the day to day operations of the company.
         </p>
