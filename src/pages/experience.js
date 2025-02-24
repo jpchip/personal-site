@@ -26,7 +26,7 @@ const Experience = () => (
           business critical software to support the day to day operations of the company.
         </p>
         <p>In 2024 I joined Milwaukee Tool as a Principal Software Engineer. At Milwaukee Tool I
-          am working technology around tool connectivity, and the data that comes from those tools.
+          am working on technology focused on tool connectivity, and the data that comes from those tools.
         </p>
         <p><a href="https://registry.jsonresume.org/jpchip">My Resume</a></p>
       </div>
