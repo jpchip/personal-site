@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 import "font-awesome/css/font-awesome.min.css"
 import Helmet from "react-helmet"
 
+const yearsOfExperience = new Date().getFullYear() - 2006;
+
 const IndexPage = () => (
   <Layout>
     <Helmet>
@@ -16,7 +18,7 @@ const IndexPage = () => (
       <h1 className="display-4">Hello!</h1>
       <p className="lead">
         I am a Principal Software Engineer at <a href="https://www.milwaukeetool.com/">Milwaukee Tool</a>. I
-        have 17 years of experience with both front-end and back-end
+        have {yearsOfExperience} years of experience with both front-end and back-end
         development. Check out my <Link to="/projects">side projects</Link>,
         read my <Link to="/blog">blog</Link>, or follow me on social media.
       </p>

@@ -5,11 +5,6 @@
 		"title": "Github"
 	},
 	{
-		"icon": "fa fa-twitter",
-		"link": "https://www.twitter.com/jpchip",
-		"title": "Twitter"
-	},
-	{
 		"icon": "fa fa-flickr",
 		"link": "https://www.flickr.com/people/24311566@N07/",
 		"title": "Flickr"
@@ -25,8 +20,13 @@
 		"title": "keybase.io"
 	},
 	{
-		"icon" : "fa fa-bitcoin",
-		"link" : "https://www.blockchain.com/btc/address/14ziWa5NFdFYhvncQqgpyWnvELXYyNfmGy",
-		"title" : "Bitcoin Wallet"
+		"icon": "fa fa-share-square-o",
+		"link": "https://bsky.app/profile/jaredchapiewsky.me",
+		"title": "BlueSky"
+	},
+	{
+		"icon": "fa fa-linkedin",
+		"link": "https://www.linkedin.com/in/jared-chapiewsky/",
+		"title": "LinkedIn"
 	}
 ]
