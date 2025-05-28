@@ -70,5 +70,14 @@
 		"Frozen Custard Flavors of the Day",
 		"url": "https://github.com/jpchip/mke-frozen-treats",
 		"thumbnailImage": "../images/projects/mkefrozentreats.png"
-	}
+	},
+        {
+		"title": "Global Entry Alerts",
+		"date": "2025-05",
+		"description":
+		"Get notified of global entry appts",
+		"url": "https://www.val.town/x/jpchip/GlobalEntryAppointmentChecker/code/README.md",
+		"thumbnailImage": "../images/projects/globalEntry.png"
+	},
+	
 ]
