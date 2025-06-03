@@ -77,5 +77,13 @@
 		"description": "Get notified of global entry appts",
 		"url": "https://www.val.town/x/jpchip/GlobalEntryAppointmentChecker/code/README.md",
 		"thumbnailImage": "../images/projects/globalEntry.png"
-	}	
+	},
+        {
+		"title": "Best Books",
+		"date": "2025-06",
+		"description": "Brag about the books you've read",
+		"url": "https://books-everyone-should-read.netlify.app/",
+		"thumbnailImage": "../images/projects/planningPoker.png"
+	}
+	
 ]
