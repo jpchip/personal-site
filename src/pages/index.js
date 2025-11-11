@@ -17,7 +17,7 @@ const IndexPage = () => (
     <div className="jumbotron mt-5 pt-3">
       <h1 className="display-4">Hello!</h1>
       <p className="lead">
-        I am a Principal Software Engineer at <a href="https://www.milwaukeetool.com/">Milwaukee Tool</a>. I
+        I am a Staff Software Engineer at <a href="https://www.milwaukeetool.com/">Milwaukee Tool</a>. I
         have {yearsOfExperience} years of experience with both front-end and back-end
         development. Check out my <Link to="/projects">side projects</Link>,
         read my <Link to="/blog">blog</Link>, or follow me on social media.
