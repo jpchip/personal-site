@@ -84,6 +84,14 @@
 		"description": "Brag about the books you've read",
 		"url": "https://books-everyone-should-read.netlify.app/",
 		"thumbnailImage": "../images/projects/wordcloud.png"
+	},
+	{
+		"title": "Fish Frynder",
+		"date": "2026-02",
+		"description": "Find fish frys around Milwaukee",
+		"url": "https://fishfrynder.com/",
+		"thumbnailImage": "../images/fishfrynder.png"
 	}
 	
 ]
+
