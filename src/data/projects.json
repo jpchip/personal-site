@@ -91,7 +91,16 @@
 		"description": "Find fish frys around Milwaukee",
 		"url": "https://fishfrynder.com/",
 		"thumbnailImage": "../images/fishfrynder.png"
+	},
+	{
+		"title": "Cimarron",
+		"date": "2026-04",
+		"description": "A visual novel adaptation of Cimarron by Edna Ferber",
+		"url": "https://jpchip.itch.io/cimarron",
+		"thumbnailImage": "../images/cover_630x500.png"
 	}
+
+	
 	
 ]
 
