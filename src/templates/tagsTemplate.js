@@ -2,6 +2,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -34,11 +35,13 @@ const Tags = ({ pageContext, data }) => {
 
 export default Tags
 
+export const Head = ({ pageContext }) => <Seo title={`Tag: ${pageContext.tag}`} />
+
 export const pageQuery = graphql`
   query($tag: String) {
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount

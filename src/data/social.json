@@ -1,31 +1,31 @@
 [
 	{
-		"icon": "fa fa-github",
+		"icon": "fa-brands fa-github",
 		"link": "https://github.com/jpchip",
 		"title": "Github"
 	},
 	{
-		"icon": "fa fa-flickr",
+		"icon": "fa-brands fa-flickr",
 		"link": "https://www.flickr.com/people/24311566@N07/",
 		"title": "Flickr"
 	},
 	{
-		"icon": "fa fa-wordpress",
+		"icon": "fa-brands fa-wordpress",
 		"link": "https://mylifeintheservice.wordpress.com/",
 		"title": "WordPress"
 	},
 	{
-		"icon": "fa fa-key",
+		"icon": "fa-solid fa-key",
 		"link": "https://keybase.io/jpchapiewsky",
 		"title": "keybase.io"
 	},
 	{
-		"icon": "fa fa-share-square-o",
+		"icon": "fa-brands fa-bluesky",
 		"link": "https://bsky.app/profile/jaredchapiewsky.me",
 		"title": "BlueSky"
 	},
 	{
-		"icon": "fa fa-linkedin",
+		"icon": "fa-brands fa-linkedin",
 		"link": "https://www.linkedin.com/in/jared-chapiewsky/",
 		"title": "LinkedIn"
 	}

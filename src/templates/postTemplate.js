@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import Layout from "../components/layout"
 
@@ -9,7 +9,6 @@ const PostTemplate = ({ data }) => {
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <SEO title="Home" keywords={[`post`, ...frontmatter.tags]} />
       <section>
         <div>
           <h1>{frontmatter.title}</h1>
@@ -22,6 +21,16 @@ const PostTemplate = ({ data }) => {
 }
 
 export default PostTemplate
+
+export const Head = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+  return (
+    <Seo
+      title={frontmatter.title}
+      keywords={[`post`, ...(frontmatter.tags || [])]}
+    />
+  )
+}
 
 export const pageQuery = graphql`
   query($slug: String!) {

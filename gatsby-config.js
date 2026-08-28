@@ -1,21 +1,38 @@
+const siteMetadata = require(`./src/siteMetadata`)
+
 module.exports = {
-  siteMetadata: {
-    title: `Jared Chapiewsky`,
-    description: `Portfolio of Jared Chapiewsky.`,
-    author: `Jared Chapiewsky`,
-    baseUrl: `https://frosty-lovelace-b70f5c.netlify.com`
-  },
+  siteMetadata,
   plugins: [
-	  `gatsby-transformer-json`,
-	  {
-		  resolve: `gatsby-source-filesystem`,
-		  options: {
-			  path: `${__dirname}/src/data`,
-		  },
-	  },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          quietDeps: true,
+          silenceDeprecations: [`import`, `global-builtin`, `color-functions`],
+        },
+        // Bootstrap's compiled output leads with a `/*! Bootstrap v5.3.8 ... */`
+        // license comment right before its `:root, [data-bs-theme=light] {`
+        // rule. When Gatsby's production build later concatenates this
+        // stylesheet with the separately-imported Font Awesome CSS and
+        // minifies the result, that comment ends up spliced into the
+        // selector list itself (`:root,[data-bs-theme=light],/*! ... */{`).
+        // The trailing comma makes the whole selector invalid, so browsers
+        // drop the rule outright - silently wiping every Bootstrap `--bs-*`
+        // custom property and, with it, every `bg-*`/`text-*`/etc. utility
+        // that reads them (navbar-dark bg-primary, the bg-light card, ...).
+        // Stripping comments here, before the file ever reaches that later
+        // concatenation/minification step, avoids the corruption entirely.
+        postCssPlugins: [require(`postcss-discard-comments`)({ removeAll: true })],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,12 +41,13 @@ module.exports = {
       },
     },
     {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-            name: `markdown-pages`,
-            path: `${__dirname}/src/pages`,
-        },
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/pages`,
+      },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -51,21 +69,20 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-                maxWidth: 600,
+              maxWidth: 600,
             },
           },
         ],
       },
     },
+    `gatsby-plugin-sitemap`,
     {
-      resolve: `gatsby-source-wordpress`,
+      resolve: `gatsby-plugin-robots-txt`,
       options: {
-        baseUrl: `mylifeintheservice.wordpress.com`,
-        protocol: `https`,
-        hostingWPCOM: true,
-        useACF: false
-      }
-    }
+        host: siteMetadata.siteUrl,
+        sitemap: `${siteMetadata.siteUrl}/sitemap-index.xml`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

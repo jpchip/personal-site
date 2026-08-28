@@ -1,29 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Img from "gatsby-image"
-import Helmet from "react-helmet"
+import Seo from "../components/seo"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ProjectsPage = ({ data }) => (
   <Layout>
-    <Helmet>
-      <body className="keyboard" />
-    </Helmet>
-    <SEO
-      title="Projects"
-      keywords={[`projects`, `hacks`, `open source`, `portfolio`]}
-    />
     <h1 className="text-white">Projects</h1>
     <div className="card-columns">
       {data.allProjectsJson.edges.map(project => (
         <div key={project.node.id} className="card mb-2">
           <div className="card-header">{project.node.title}</div>
           <a href={project.node.url} target="_blank" rel="noopener noreferrer">
-            {project.node.thumbnailImage.childImageSharp && (
-              <Img
+            {getImage(project.node.thumbnailImage) && (
+              <GatsbyImage
                 className="card-img-top border-bottom"
-                fluid={project.node.thumbnailImage.childImageSharp.fluid}
+                image={getImage(project.node.thumbnailImage)}
+                alt={project.node.title}
               />
             )}
           </a>
@@ -38,9 +31,17 @@ const ProjectsPage = ({ data }) => (
 
 export default ProjectsPage
 
+export const Head = () => (
+  <Seo
+    title="Projects"
+    keywords={[`projects`, `hacks`, `open source`, `portfolio`]}
+    bodyClass="keyboard"
+  />
+)
+
 export const projectsQuery = graphql`
   query {
-    allProjectsJson(sort: { order: ASC, fields: [title] }) {
+    allProjectsJson(sort: { title: ASC }) {
       edges {
         node {
           id
@@ -50,9 +51,7 @@ export const projectsQuery = graphql`
           url
           thumbnailImage {
             childImageSharp {
-              fluid(maxWidth: 1200) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(width: 1200, layout: CONSTRAINED)
             }
           }
         }

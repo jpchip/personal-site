@@ -2,7 +2,12 @@
 
 @import "variables";
 
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
+
+// Font Awesome's SCSS assumes its webfonts sit next to the compiled CSS, which
+// breaks once its partials are @import'd from a different directory. Its
+// prebuilt CSS (imported as a plain asset in layout.js) doesn't have that
+// problem, so we pull icons in that way instead of via SCSS.
 
 .nav-link.active {
   font-weight: bold;
@@ -25,6 +30,26 @@
   }
   .blog-media {
     flex-wrap: wrap;
+  }
+}
+
+// Bootstrap 5 dropped .card-columns; this reproduces the same masonry-ish
+// layout with plain CSS multi-column.
+.card-columns {
+  column-count: 3;
+  column-gap: 1.25rem;
+
+  .card {
+    display: inline-block;
+    width: 100%;
+  }
+
+  @media (max-width: 992px) {
+    column-count: 2;
+  }
+
+  @media (max-width: 576px) {
+    column-count: 1;
   }
 }
 
