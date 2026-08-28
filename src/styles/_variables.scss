@@ -1,5 +1,15 @@
 $font-family-base: 'Maven Pro', sans-serif;
 
+// Bootstrap 5 added an xxl tier (1320px) that didn't exist in BS4, which
+// widened .container on large screens. Capping back at BS4's widths so the
+// page layout matches what it looked like before this upgrade.
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #ecf0f1 !default;
@@ -59,6 +69,10 @@ $nav-tabs-border-color:             $gray-200 !default;
 // Navbar
 
 $navbar-padding-y:                  1rem !default;
+// Bootstrap 5 changed this default from BS4's 1rem to null (0). Restored so
+// the navbar brand/links keep their original horizontal inset — our <nav>
+// has no .container wrapper providing it another way.
+$navbar-padding-x:                  1rem !default;
 
 $navbar-dark-color:                 $white !default;
 $navbar-dark-hover-color:           $success !default;
