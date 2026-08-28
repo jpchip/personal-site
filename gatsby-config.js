@@ -18,6 +18,19 @@ module.exports = {
           quietDeps: true,
           silenceDeprecations: [`import`, `global-builtin`, `color-functions`],
         },
+        // Bootstrap's compiled output leads with a `/*! Bootstrap v5.3.8 ... */`
+        // license comment right before its `:root, [data-bs-theme=light] {`
+        // rule. When Gatsby's production build later concatenates this
+        // stylesheet with the separately-imported Font Awesome CSS and
+        // minifies the result, that comment ends up spliced into the
+        // selector list itself (`:root,[data-bs-theme=light],/*! ... */{`).
+        // The trailing comma makes the whole selector invalid, so browsers
+        // drop the rule outright - silently wiping every Bootstrap `--bs-*`
+        // custom property and, with it, every `bg-*`/`text-*`/etc. utility
+        // that reads them (navbar-dark bg-primary, the bg-light card, ...).
+        // Stripping comments here, before the file ever reaches that later
+        // concatenation/minification step, avoids the corruption entirely.
+        postCssPlugins: [require(`postcss-discard-comments`)({ removeAll: true })],
       },
     },
     {
