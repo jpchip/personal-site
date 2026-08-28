@@ -19,7 +19,7 @@ const BlogPage = ({ data }) => {
       <h1 className="text-white">Thoughts</h1>
       {posts.map(post => (
         <div key={post.node.id} className="card mt-3">
-          <div className="blog-media d-flex flex-wrap ms-1 mt-1">
+          <div className="blog-media d-flex ms-1 mt-1">
             {post.node.frontmatter.thumbnail && (
               <Link to={post.node.fields.slug}>
                 <GatsbyImage
