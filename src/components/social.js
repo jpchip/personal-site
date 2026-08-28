@@ -1,27 +1,27 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-const Social = () => (
-  <StaticQuery
-    query={graphql`
-      {
-        allSocialJson {
-          edges {
-            node {
-              id
-              title
-              link
-              icon
-            }
+const Social = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allSocialJson {
+        edges {
+          node {
+            id
+            title
+            link
+            icon
           }
         }
       }
-    `}
-    render={data => (
-      <ul className="social-icons-list list-group list-group-horizontal list-group-flush">
-        {data.allSocialJson.edges.map(social => (
+    }
+  `)
+
+  return (
+    <ul className="social-icons-list list-group list-group-horizontal list-group-flush">
+      {data.allSocialJson.edges.map(social => (
+        <li key={social.node.id}>
           <a
-            key={social.node.id}
             href={social.node.link}
             target="_blank"
             rel="noopener noreferrer"
@@ -30,10 +30,10 @@ const Social = () => (
           >
             <i className={social.node.icon} />
           </a>
-        ))}
-      </ul>
-    )}
-  />
-)
+        </li>
+      ))}
+    </ul>
+  )
+}
 
 export default Social

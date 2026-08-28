@@ -2,10 +2,18 @@
 
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import { kebabCase } from "lodash"
+import Seo from "../components/seo"
 
 import Layout from "../components/layout"
+
+const kebabCase = str =>
+  str
+    .toString()
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+
 const TagsPage = ({ data }) => {
   const allTags = data.allMarkdownRemark.group
 
@@ -29,10 +37,12 @@ const TagsPage = ({ data }) => {
 
 export default TagsPage
 
+export const Head = () => <Seo title="Tags" />
+
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }

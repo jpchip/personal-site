@@ -1,21 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
-import Helmet from "react-helmet"
+import Seo from "../components/seo"
 
 import Layout from "../components/layout"
 const IllegiblePage = ({ data }) => {
-  const allPosts = data.allWordpressPost.edges
+  const allPosts = data.allIllegiblePost.edges
 
   return (
     <Layout>
-      <Helmet>
-        <body className="stars" />
-      </Helmet>
-      <SEO
-        title="Illegible Posts"
-        keywords={[`blog`, `help`, `illegible`, `posts`, `WWII`, `diary`]}
-      />
       <div>
         <div className="card mb-2">
           <div className="card-body">
@@ -59,11 +51,17 @@ const IllegiblePage = ({ data }) => {
 
 export default IllegiblePage
 
+export const Head = () => (
+  <Seo
+    title="Illegible Posts"
+    keywords={[`blog`, `help`, `illegible`, `posts`, `WWII`, `diary`]}
+    bodyClass="stars"
+  />
+)
+
 export const pageQuery = graphql`
   query {
-    allWordpressPost(
-      filter: { tags: { elemMatch: { name: { eq: "illegible" } } } }
-    ) {
+    allIllegiblePost {
       edges {
         node {
           id

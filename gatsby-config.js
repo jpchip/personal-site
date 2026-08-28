@@ -1,21 +1,25 @@
+const siteMetadata = require(`./src/siteMetadata`)
+
 module.exports = {
-  siteMetadata: {
-    title: `Jared Chapiewsky`,
-    description: `Portfolio of Jared Chapiewsky.`,
-    author: `Jared Chapiewsky`,
-    baseUrl: `https://frosty-lovelace-b70f5c.netlify.com`
-  },
+  siteMetadata,
   plugins: [
-	  `gatsby-transformer-json`,
-	  {
-		  resolve: `gatsby-source-filesystem`,
-		  options: {
-			  path: `${__dirname}/src/data`,
-		  },
-	  },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          quietDeps: true,
+          silenceDeprecations: [`import`, `global-builtin`, `color-functions`],
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,12 +28,13 @@ module.exports = {
       },
     },
     {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-            name: `markdown-pages`,
-            path: `${__dirname}/src/pages`,
-        },
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/pages`,
+      },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -51,21 +56,20 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-                maxWidth: 600,
+              maxWidth: 600,
             },
           },
         ],
       },
     },
+    `gatsby-plugin-sitemap`,
     {
-      resolve: `gatsby-source-wordpress`,
+      resolve: `gatsby-plugin-robots-txt`,
       options: {
-        baseUrl: `mylifeintheservice.wordpress.com`,
-        protocol: `https`,
-        hostingWPCOM: true,
-        useACF: false
-      }
-    }
+        host: siteMetadata.siteUrl,
+        sitemap: `${siteMetadata.siteUrl}/sitemap-index.xml`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

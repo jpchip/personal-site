@@ -2,19 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Social from "../components/social"
-import SEO from "../components/seo"
-import "font-awesome/css/font-awesome.min.css"
-import Helmet from "react-helmet"
+import Seo from "../components/seo"
 
-const yearsOfExperience = new Date().getFullYear() - 2006;
+const yearsOfExperience = new Date().getFullYear() - 2006
 
 const IndexPage = () => (
   <Layout>
-    <Helmet>
-      <body className="ferns" />
-    </Helmet>
-    <SEO title="Home" keywords={[`web`, `developer`, `programmer`]} />
-    <div className="jumbotron mt-5 pt-3">
+    <div className="p-5 mb-4 bg-light rounded-3 mt-5 pt-3">
       <h1 className="display-4">Hello!</h1>
       <p className="lead">
         I am a Staff Software Engineer at <a href="https://www.milwaukeetool.com/">Milwaukee Tool</a>. I
@@ -28,3 +22,7 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const Head = () => (
+  <Seo title="Home" keywords={[`web`, `developer`, `programmer`]} bodyClass="ferns" />
+)
