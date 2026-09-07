@@ -98,6 +98,13 @@
 		"description": "A visual novel adaptation of Cimarron by Edna Ferber",
 		"url": "https://jpchip.itch.io/cimarron",
 		"thumbnailImage": "../images/cover_630x500.png"
+	},
+	{
+		"title": "Youtube Music Ranker",
+		"date": "2026-04",
+		"description": "Rank your YouTube Playlists via head-to-head battles",
+		"url": "https://music-ranker.duckdns.org/",
+		"thumbnailImage": "../images/youtube-music-ranker.png"
 	}
 
 	
